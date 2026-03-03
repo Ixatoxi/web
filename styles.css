@@ -1,7 +1,6 @@
 body{
-    background-color: gray;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -9,8 +8,12 @@ header {
     align-items: center;
     color: white;
     display: flex;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
     justify-content: space-between;
     padding:  15px 40px;
+    backdrop-filter: blur(10px);
+    position: fixed;
 }
 nav a{
     text-decoration: none;
@@ -38,3 +41,26 @@ nav a:hover{
     font-weight: normal;
 }
 
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 84px;
+    letter-spacing: 5px;
+    padding: 8px 18px;
+    
+}
+
+.home{
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0), rgba(0,0,0,0.7));
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    padding: 60px;
+    color: white;
+     background: 
+        linear-gradient(rgba(0,0,0), rgba(0,0,0,0.7)),
+        url("wine.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
