@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+<title>Iwakuni Rosso Verde</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel = "stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        
+        </div>
+        <body class="about-page"></body>
+
+        <header>
+    <div class = "banner">
+<i style="font-size:24px" class="fa">&#xf042;</i>
+<span class="iwakuni">Iwakuni</span> 
+<span class="rosso">Rosso</span> 
+<span class="verde">Verde</span>
+    </div>
+    <div class = "tagline">
+
+Yummy, Soury, Flavoury
+
+    </div>
+    <nav>
+        <a href="index.html"><i style="font-size:18px" class="fa">&#xf015;</i> home</a>
+        <a href="profile.html"><i style="font-size:18px" class="fa">&#xf030;</i> profile</a>
+        <a href="about.html"><i style="font-size:18px" class="fa">&#xf0c0;</i> about</a>
+        <a href="contact.html"><i style="font-size:18px" class="fa">&#xf005;</i> contact us</a> 
+    </nav>
+ </header>
+ <section class = "about">
+    <div class = "deskripsiAbout">
+        
+        <div class="fade-in">
+            <h1>About us</h1>  <img src="zwine.png" alt="fermentasi 1" class="small" style="width: 333px; height: auto;">
+            </div>
+            <div class="fade-in">
+        <h3>Iwakuni Rosso Verde</h3>
+        </div>
+            <div class="fade-in">
+            
+<p style="text-align: justify; max-width: 600px; margin-left: auto; margin-left: 0;">Iwakuni berasal dari bahasa jepang yang ditranslate ke bahasa inggris menjadi White Snake, lalu di translate
+    lagi ke indonesia menjadi ular putih. Ini melambangkan ular yang haus akan darah (warna <span class="red">Merah</span>) dan putih yang
+    melambangkan warna dari <span class="verde">White Wine</span> yang dibuat dengan <span class="hijau">Anggur hijau</span>.
+    Lalu "<span class="rosso">Rosso</span>" yang berarti <span class="red">merah</span> dan <span class="verde">"Verde"</span> yang berarti <span class="hijau">hijau</span>.
+</p></div>
+<div class="fade-in"> <h3 style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;"> Hasil Percobaan</h3>
+<p style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Hasil dari bioteknologi yang telah kita buat sangat memuaskan. Kita berhasil membuat wine anggur 
+    tanpa peralatan professional sama sekali. Disini wine yang telah dibuat, sudah dicoba organoleptik (rasa) 
+    oleh 10 orang, dengan begitu kita bisa mengetahui kualitas wine yang telah dibuat oleh kami.
+</p> <h3 style="text-align: justify; max-width: 600px; margin-left: auto; margin-left: 0;">Bahan dan Alat</h3>
+<p style="text-align: justify; max-width: 600px; margin-left: auto; margin-left: 0;">Bahan-bahan dan alat yang diperlukan untuk membuat sebuah produk wine adalah, Ragi/yeast saccharomyces cerevisae, Air 500ml, galon plastik
+    sendok, blender, saringan/kain, serta gula yang banyak.
+</p>
+</div>
+        <div class="carousel">
+            <div class="group">
+                <div class="card">1<img src="zimage1.png" alt="Wine 1"></div>
+                <div class="card">2<img src="zimage2.png" alt="Wine 2"></div>
+                <div class="card">3<img src="zimage3.png" alt="Wine 3"></div>
+                <div class="card">4<img src="zimage4.png" alt="Wine 4"></div>
+                <div class="card">5<img src="zimage5.png" alt="Wine 5"></div>
+                <div class="card">6<img src="zimage6.png" alt="Wine 6"></div>
+            </div>
+            <div aria-hidden class="group">
+                <div class="card">1<img src="zimage1.png" alt="Wine 1"></div>
+                <div class="card">2<img src="zimage2.png" alt="Wine 1"></div>
+                <div class="card">3<img src="zimage3.png" alt="Wine 1"></div>
+                <div class="card">4<img src="zimage4.png" alt="Wine 1"></div>
+                <div class="card">5<img src="zimage5.png" alt="Wine 1"></div>
+                <div class="card">6<img src="zimage6.png" alt="Wine 1"></div>
+            
+    </div>
+ </section>
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const faders = document.querySelectorAll('.fade-in');
+    
+        const appearOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+    
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    });
+    </script>
+    </body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</html>

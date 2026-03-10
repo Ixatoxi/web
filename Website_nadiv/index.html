@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+<title>Iwakuni Rosso Verde</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel = "stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <body class="home-page"></body>
+
+        <header>
+    <div class = "banner">
+<i style="font-size:24px" class="fa">&#xf042;</i>
+<span class="iwakuni">Iwakuni</span> 
+<span class="rosso">Rosso</span> 
+<span class="verde">Verde</span>
+    </div>
+    <div class = "tagline">
+
+Yummy, Soury, Flavoury
+
+    </div>
+    <nav>
+
+        <a href="index.html"><i style="font-size:18px" class="fa">&#xf015;</i> home</a>
+        <a href="profile.html"><i style="font-size:18px" class="fa">&#xf030;</i> profile</a>
+        <a href="about.html"><i style="font-size:18px" class="fa">&#xf0c0;</i> about</a>
+        <a href="contact.html"><i style="font-size:18px" class="fa">&#xf005;</i> contact us</a> 
+    </nav>
+ </header>
+ <section class = "home">
+    <div class="deskripsiHome">
+        <div class="fade-in">
+        <h1>Welcome!</h1>
+        </div>
+        <div class="greetings">
+            <div class="fade-in">
+            <h3>Greetings</h3>
+        </div>
+        <div class="fade-in">
+            <p>
+                Website ini dirancang untuk memberikan gambaran komprehensif mengenai layanan penjualan <span class="wine">wine-wine</span>  yang telah dibuat.
+                Mulai dari <span class="rosso">Rose Wine</span> , hingga <span class="verde">White Wine</span> , kami berusaha menjelaskan setiap bagian dari wine
+                agar para peminat dapat mengetahui wine mana yang cocok dengan mereka dan akan bisa langsung
+                membeli dengan berbagai metode layanan pembayaran.
+            </p>
+            </div>
+            <div class="fade-in">
+            <div style="text-align: center; margin: 40px 0;">
+            <div class="single-line-images">
+            <img src="zzz.png" alt="Stand Arrow 1" class="small" style="width: 333px; height: auto;">
+            <img src="z.png" alt="Wine Bottle" class="large" style=" width: 500px; display: block; margin: 20px auto;">
+            <img src="zz.png" alt="Stand arrow 2" class="small" style="width: 400px; height: auto;">
+            </div></div>            <div class="fade-in">
+              <p style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">
+                  Di dalam website ini, kamu akan menemukan hasil fermentasi <span class="wine">wine-wine</span> yang sudah premium quality 
+                  dengan segala tes yang telah dilaluinya.
+                  Saya membangun platform ini dengan satu tujuan sederhana: agar bisa semuanya bisa mengetahui perbedaan penting dan rasa 
+                  dari <span class="rosso">Rose Wine</span> dan <span class="verde">White Wine</span> yang unik.
+                </p></div>
+                <div class="fade-in">
+                    <p style="text-align: justify; max-width: 600px; margin-left: auto; margin-top: 0;">About us? Click panah dibawah ini!</p>
+                        </div>
+                            <div class="button-paragraph fade-in">
+                    <a href="about.html">
+                        <img src="zabout-button.png" alt="About Us" class="btn-image">
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const faders = document.querySelectorAll('.fade-in');
+        
+            const appearOnScroll = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting){
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+        
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+        </script>
+        
+    </body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</html>
